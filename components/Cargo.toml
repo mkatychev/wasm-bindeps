@@ -1,0 +1,22 @@
+# https://doc.rust-lang.org/beta/cargo/reference/unstable.html#artifact-dependencies
+cargo-features = ["per-package-target"]
+
+[package]
+name = "components"
+version.workspace = true
+edition.workspace = true
+publish = false
+autolib = false
+forced-target = "wasm32-unknown-unknown"
+
+
+# [lib]
+# adding `#[no_main]` makes the components below behave as if they had the definition below:
+# crate-type = ["cdylib"]
+[[bin]]
+name = "adder"
+path = "src/adder.rs"
+test = false
+
+[dependencies]
+wit-bindgen.workspace = true

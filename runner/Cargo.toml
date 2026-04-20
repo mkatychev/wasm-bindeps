@@ -1,0 +1,15 @@
+[package]
+name = "runner"
+version.workspace = true
+edition.workspace = true
+
+
+[dependencies]
+wasmtime.workspace = true
+wasmtime-wasi.workspace = true
+wit-component.workspace = true
+
+[build-dependencies]
+components = { path = "../components", artifact = ["bin:adder"], target = "wasm32-unknown-unknown" }
+wasmtime.workspace = true
+wit-component.workspace = true
