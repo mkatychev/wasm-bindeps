@@ -28,11 +28,11 @@ pub fn compile_component(wasm_bytes: &[u8]) -> Vec<u8> {
         .expect("failed to encode wasm module bytes");
 
     let engine = wasmtime::Engine::new(&config).unwrap();
-    let binary = engine
-        .precompile_component(&component_bytes)
-        .expect("failed to encode wasm module bytes");
+    
 
-    binary
+    engine
+        .precompile_component(&component_bytes)
+        .expect("failed to encode wasm module bytes")
 }
 
 fn main() {
