@@ -1,13 +1,10 @@
 # https://doc.rust-lang.org/beta/cargo/reference/unstable.html#artifact-dependencies
-cargo-features = ["per-package-target"]
-
 [package]
 name = "components"
 version.workspace = true
 edition.workspace = true
 publish = false
 autolib = false
-forced-target = "wasm32-unknown-unknown"
 
 
 # [lib]

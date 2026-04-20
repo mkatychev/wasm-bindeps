@@ -1,3 +1,5 @@
+// adding `#![no_main]` makes the components below behave as if they had the definition below:
+// crate-type = ["cdylib"]
 #![no_main]
 
 mod bindings {
