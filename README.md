@@ -5,9 +5,9 @@
 
 * nightly toolchain is NOT needed for the guest portion
 * `autolib` and `test` must be disabled:
-  https://github.com/mkatychev/wasm-bindeps/blob/6c71e2e11eae97b63134e786848a3fef701f7454/components/Cargo.toml#L7-L16
+  https://github.com/mkatychev/wasm-bindeps/blob/b75ad13779f1022ebec4bca1c794cd0638104f84/components/Cargo.toml#L2-L16
 * `no_main` explanation:
-  https://github.com/mkatychev/wasm-bindeps/blob/6c71e2e11eae97b63134e786848a3fef701f7454/components/src/adder.rs#L1-L3
+  https://github.com/mkatychev/wasm-bindeps/blob/b75ad13779f1022ebec4bca1c794cd0638104f84/components/src/adder.rs#L1-L3
 
 # Host callouts
 
